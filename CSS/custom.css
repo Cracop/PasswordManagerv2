@@ -1,0 +1,84 @@
+body {
+  box-sizing: border-box !important;
+  padding-top: 80px;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.navbar-custom {
+  background-color: purple;
+  margin-bottom: 30px;
+  height: 70px;
+}
+
+.btn-custom {
+  background-color: purple;
+  border-color: purple;
+  color: white;
+}
+
+#botones {
+  margin-top: 20px;
+}
+
+div {
+  border: 0px solid red !important;
+}
+
+#layout {
+  height: 100%;
+  width: 100%;
+}
+
+#actions {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  height: 280px;
+}
+
+#btnGenerar {
+  position: relative;
+  left: 80px;
+  margin-top: 10px;
+}
+
+#btnDescifrar {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.darkH {
+  color: black;
+}
+
+.modal-backdrop {
+  background-color: black;
+}
+
+#tabla {
+  width: 70%;
+  position: absolute;
+  left: 100px;
+  height: 380px;
+  background-color: rgba(3, 6, 32, 0);
+  display: inline-block;
+}
+
+#btnAgregar {
+  position: absolute;
+  right: 13px;
+  top: 90px;
+}
+
+#alerta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

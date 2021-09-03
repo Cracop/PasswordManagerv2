@@ -1,0 +1,10 @@
+Funcionalidad:
+    1. Leer/Escribir un JSON 
+    2. Cifrar y Descifrar ese JSON 
+    3. Me acepta una contraseña maestra, la cual será la clave con la que cifro todo
+    4. Me mostrará los sitios y el alias en una tabla (utilizar una librería)
+    5. Poder generar una contraseña que sea segura (12 caracteres)
+    6. Puedo cambiar la contraseña maestra y tengo que volver a cifrar todo
+
+
+    Nota el modal me guarda el valor que le puse y se puede acceder a el, se necesita eliminar despues de hashear

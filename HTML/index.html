@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link href="../CSS/tabulator_midnight.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/custom.css" />
+    <title>Password Manager by Cracop</title>
+  </head>
+  <body class="bg-dark text-white">
+    <!--Modal Window-->
+    <div
+      class="modal fade"
+      id="passwdModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title darkH" id="exampleModalLabel">
+              Ingresa tu contraseña:
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input type="password" id="inputMain" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+              id="btnAceptar"
+            >
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Navbar-->
+    <nav
+      id="nav"
+      class="navbar navbar-expand-sm navbar-dark fixed-top navbar-custom"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Psswd Manager</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-success btn-custom"
+                id="btnAcceder"
+                data-bs-toggle="modal"
+                data-bs-target="#passwdModal"
+              >
+                Acceder
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-warning btn-custom"
+                id="btnCambiarMaestra"
+                data-bs-toggle="modal"
+                data-bs-target="#passwdModal"
+              >
+                Cambiar Contraseña Maestra
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-danger btn-custom"
+                id="btnSalir"
+              >
+                Salir
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Layout-->
+    <div id="layout">
+      <div id="info">
+        <div id="tabla">Hello</div>
+        <button type="button" class="btn btn-outline-success" id="btnAgregar">
+          Agregar
+        </button>
+      </div>
+
+      <div id="actions">
+        <div class="container overflow-hidden" id="inputs">
+          <div class="row mb-4">
+            <div class="col-6">
+              <p>Sitio:</p>
+              <input type="text" id="inputSitio" />
+            </div>
+            <div class="col-6">
+              <p>Cuenta:</p>
+              <input type="text" id="inputCuenta" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <p>Contraseña:</p>
+              <span>
+                <input type="text" id="inputPasswd" />
+                <button
+                  type="button"
+                  class="btn btn-outline-info btn-sm"
+                  id="btnDescifrar"
+                >
+                  Descifrar</button
+                ><button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  id="btnGenerar"
+                >
+                  Generar
+                </button></span
+              >
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+
+        <div class="row" id="botones">
+          <div class="col-3"></div>
+          <div class="col-6 text-center">
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic mixed styles example"
+            >
+              <button type="button" class="btn btn-danger" id="btnEliminar">
+                Eliminar
+              </button>
+              <button type="button" class="btn btn-warning" id="btnModificar">
+                Modificar
+              </button>
+              <button type="button" class="btn btn-success" id="btnGuardar">
+                Guardar
+              </button>
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+      <div class="alert customAlert" role="alert" id="alerta"></div>
+    </div>
+    <script type="text/javascript" src="../JS/tabulator.min.js"></script>
+    <script src="../JS/renderer.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+  </body>
+</html>
