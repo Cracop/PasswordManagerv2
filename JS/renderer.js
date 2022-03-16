@@ -163,7 +163,7 @@ const cifrarJSON = (key) => {
   ).toString();
   try {
     fs.writeFileSync("data.json", ciphertext);
-    fs.writeFileSync("test.json", JSON.stringify(Object.fromEntries(cuentas)));
+    //fs.writeFileSync("test.json", JSON.stringify(Object.fromEntries(cuentas)));
     //file written successfully
     console.log("complete");
   } catch (err) {

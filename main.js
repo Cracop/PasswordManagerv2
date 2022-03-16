@@ -4,7 +4,7 @@
 const { app, Menu, BrowserWindow } = require("electron");
 const path = require("path");
 const development = true;
-if (require("electron-squirrel-startup")) return;
+//if (require("electron-squirrel-startup")) return;
 
 function createWindow() {
   // Create the browser window.
