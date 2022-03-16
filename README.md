@@ -35,8 +35,15 @@ Al correr el comando `npm start`, se mostrará la siguiente ventana
 
 Al darle click en `Acceder` se presentará la siguiente dialog box:
 
+![Insertar Contraseña](/images/2.png)
 
+- Si la aplicación no se ha utilizado previamente (no existe un archivo llamado `data.json`), la contraseña que se le dé será la contraseña con la cual se cifrará la información de ese momento en adelante. 
+- De haberse utilizado anteriormente, se deberá introducir la contraseña que se utilizó la primera vez. Si no se tiene la contraseña original, con borrar el archivo `data.json` la aplicación regresará a su estado original. 
 
-Si ya 
+Ya una vez dentro de la aplicación se mostrarán las cuentas que se han guardado en forma de tabla, así como un botón que permite agregar una nueva cuenta. 
+![Ya dentro](/images/4.png)
+
+Al hacerle click a al botón de `Agregar` se presentan los siguentes campos. El botón de `Generar` presenta sugerencia de una contraseña segura. 
+![Agregar Cuenta](/images/6.png)
 
 ### Cambios respecto a Password Manager V1 y Futuro
