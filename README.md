@@ -55,14 +55,15 @@ Si se desea cambiar la contraseña con la cual se cifra la información, solo se
 ![Contraseña Maestra](/images/10.png)
 
 ### Funcionamiento
+
 ```mermaid
-  graph TD;
+graph TD;
       A-->B;
       A-->C;
       B-->D;
       C-->D;
 ```
 
-### Cambios respecto a Password Manager V1 
+### Cambios respecto a Password Manager V1
 
 ### Futuro
