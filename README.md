@@ -52,4 +52,7 @@ Al darle click en `Guardar`se actualizará nuestra tabla de cuentas
 Para modificar o ver la contraseña de una cuenta creada previamente basta con solo darle click en la tabla, esto nos mostrará de nuevo las opciones que vimos al crear la cuenta. Para ver la contraseña, se debe de dar click en `Descifrar`.
 ![Modificar](/images/9.png)
 
+Si se desea cambiar la contraseña con la cual se cifra la información, solo se necesita hacer click en `Cambiar Contraseña Maestra` e introducir la nueva contraseña.
+![Contraseña Maestra](/images/10.png)
+
 ### Cambios respecto a Password Manager V1 y Futuro
