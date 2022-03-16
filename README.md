@@ -31,7 +31,7 @@ Para correr el programa se utiliza el siguiente comando dentro de la carpeta que
 
 Al correr el comando `npm start`, se mostrará la siguiente ventana
 
-<img src="file:///home/rodrigo/Desktop/Proyectos/LearningProjects/PasswordManagerv2/images/1.png" title="" alt="GitHub Logo" data-align="center">
+![Landing Page](/images/1.png)
 
 Al darle click en `Acceder` se presentará la siguiente dialog box:
 
