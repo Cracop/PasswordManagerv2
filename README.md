@@ -29,18 +29,14 @@ Para correr el programa se utiliza el siguiente comando dentro de la carpeta que
 
 ### Uso y Funcionamiento
 
-<img src="file:///home/rodrigo/.config/marktext/images/2022-03-15-22-53-06-image.png" title="" alt="" data-align="center">
+Al correr el comando `npm start`, se mostrará la siguiente ventana
 
-<img src="file:///home/rodrigo/.config/marktext/images/2022-03-15-22-53-35-image.png" title="" alt="" data-align="center">
+<img src="file:///home/rodrigo/Desktop/Proyectos/LearningProjects/PasswordManagerv2/images/1.png" title="" alt="GitHub Logo" data-align="center">
 
-<img src="file:///home/rodrigo/.config/marktext/images/2022-03-15-22-54-23-image.png" title="" alt="" data-align="center">
+Al darle click en `Acceder` se presentará la siguiente dialog box:
 
-<img src="file:///home/rodrigo/.config/marktext/images/2022-03-15-22-55-14-image.png" title="" alt="" data-align="center">
+<img src="file:///home/rodrigo/Desktop/Proyectos/LearningProjects/PasswordManagerv2/images/2.png" title="" alt="2.png" data-align="center">
 
-<img src="file:///home/rodrigo/.config/marktext/images/2022-03-15-22-59-43-image.png" title="" alt="" data-align="center">
-
-![](/home/rodrigo/.config/marktext/images/2022-03-15-23-00-03-image.png)
-
-
+Si ya 
 
 ### Cambios respecto a Password Manager V1 y Futuro
