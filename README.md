@@ -2,13 +2,12 @@
 
 ### Contenidos
 
-- Acerca del proyecto
-
-- Instalación
-
-- Uso y Funcionamiento
-
-- Futuro
+- [Acerca del proyecto](#acerca-del-proyecto)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Funcionamiento](#uso)
+- [Cambios respecto a Password Manager V1](#cambios-respecto-a-password-manager-v1)
+- [Futuro](#futuro)
 
 ### Acerca del Proyecto
 
@@ -27,7 +26,7 @@ npm install
 
 Para correr el programa se utiliza el siguiente comando dentro de la carpeta que contiene los archivos del proyecto: `npm start`
 
-### Uso y Funcionamiento
+### Uso
 
 Al correr el comando `npm start`, se mostrará la siguiente ventana
 
@@ -55,4 +54,8 @@ Para modificar o ver la contraseña de una cuenta creada previamente basta con s
 Si se desea cambiar la contraseña con la cual se cifra la información, solo se necesita hacer click en `Cambiar Contraseña Maestra` e introducir la nueva contraseña.
 ![Contraseña Maestra](/images/10.png)
 
-### Cambios respecto a Password Manager V1 y Futuro
+### Funcionamiento
+
+### Cambios respecto a Password Manager V1 
+
+### Futuro
