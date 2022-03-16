@@ -3,7 +3,7 @@
 // Modules to control application life and create native browser window
 const { app, Menu, BrowserWindow } = require("electron");
 const path = require("path");
-const development = true;
+const development = false;//Me permite simular los ambientes de desarrollo o producción
 //if (require("electron-squirrel-startup")) return;
 
 function createWindow() {
@@ -22,8 +22,8 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile("HTML/index.html");
-
+  //mainWindow.loadFile("../HTML/index.html");
+  mainWindow.loadFile(path.join(__dirname, '../HTML/index.html'));
   //Creates the menu only if im on development
   if (!development) {
     Menu.setApplicationMenu(null);
