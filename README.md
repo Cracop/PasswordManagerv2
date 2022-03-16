@@ -46,4 +46,10 @@ Ya una vez dentro de la aplicación se mostrarán las cuentas que se han guardad
 Al hacerle click a al botón de `Agregar` se presentan los siguentes campos. El botón de `Generar` presenta sugerencia de una contraseña segura. 
 ![Agregar Cuenta](/images/6.png)
 
+Al darle click en `Guardar`se actualizará nuestra tabla de cuentas
+![Nueva Cuenta](/images/8.png)
+
+Para modificar o ver la contraseña de una cuenta creada previamente basta con solo darle click en la tabla, esto nos mostrará de nuevo las opciones que vimos al crear la cuenta. Para ver la contraseña, se debe de dar click en `Descifrar`.
+![Modificar](/images/9.png)
+
 ### Cambios respecto a Password Manager V1 y Futuro
