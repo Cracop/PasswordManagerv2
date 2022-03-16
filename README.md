@@ -35,7 +35,7 @@ Al correr el comando `npm start`, se mostrará la siguiente ventana
 
 Al darle click en `Acceder` se presentará la siguiente dialog box:
 
-<img src="file:///home/rodrigo/Desktop/Proyectos/LearningProjects/PasswordManagerv2/images/2.png" title="" alt="2.png" data-align="center">
+
 
 Si ya 
 
