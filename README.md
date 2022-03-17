@@ -5,7 +5,7 @@
 - [Acerca del proyecto](#acerca-del-proyecto)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Funcionamiento](#uso)
+- [Funcionamiento](#funcionamiento)
 - [Cambios respecto a Password Manager V1](#cambios-respecto-a-password-manager-v1)
 - [Futuro](#futuro)
 
