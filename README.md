@@ -66,7 +66,27 @@ flowchart TB
     id3{"¿Contraseña Correcta?"}
     id4("Crea el archivo")
     id5("Descifra el archivo")
-
+    id6{"¿Existe la cuenta?"}
+    id7[\"Seleccionar cuenta"\]
+    id8("Agregar")
+    id9(Se habilita la opción de agregar los datos)
+    id10[\Sitio, cuenta, contraseña\]
+    id11[\Generar\]
+    id12(Se genera la contraseña)
+    id13[\Guardar\]
+    
+    id14{"¿Eliminar?"}
+    id15[\Eliminar\]
+    id16(Se elimina la cuenta)
+    
+    
+    id17{"¿Modificar?"}
+    id18[\Modificar\]
+    id19[Se cambia la contraseña]
+    
+    id20[\Descifrar\]
+    id21(Muestra la contraseña)
+    
     idf(("Fin"))
     
     id0 --> id1
@@ -74,9 +94,29 @@ flowchart TB
     id2 -- No --> id4
     id3 -- Si --> id5
     id3 -- No --> idf
-    id5 -- No --> idf
-    id4 -- No --> idf
- 
+    id5 --> id6
+    id4 --> id6
+    id6 -- Si --> id7
+    id6 -- No --> id8
+    id8 --> id9
+    id9 --> id10
+    id10 --> id11
+    id11 --> id12
+    id12 --> id13
+    id13 --> idf
+    id7 --> id14
+    id14 -- Si -->id15
+    id15 --> id16
+    id16 --> idf
+    id14 -- No --> id17
+    id17 -- Si --> id18
+    id18 --> id19
+    id19 --> id13
+    id17 -- No --> id20
+    id20 --> id21
+    id21 --> id13
+    
+    
 ```
 
 ### Cambios respecto a Password Manager V1
