@@ -60,7 +60,23 @@ Se
 
 ```mermaid
 flowchart TB
-    Inicio--> id1{Ya existe data.json} --> Ini & Fin
+    id0(("Inicio"))
+    id1[\Pide contraseña maestra\]
+    id2{"¿Existe data.json?"}
+    id3{"¿Contraseña Correcta?"}
+    id4("Crea el archivo")
+    id5("Descifra el archivo")
+
+    idf(("Fin"))
+    
+    id0 --> id1
+    id1--> id2-- Si--> id3
+    id2 -- No --> id4
+    id3 -- Si --> id5
+    id3 -- No --> idf
+    id5 -- No --> idf
+    id4 -- No --> idf
+ 
 ```
 
 ### Cambios respecto a Password Manager V1
