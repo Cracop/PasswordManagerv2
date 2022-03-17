@@ -64,7 +64,7 @@ flowchart TB
     id2{"¿Existe data.json?"}
     id3{"¿Contraseña Correcta?"}
     id4("Crea el archivo")
-    id5("Descifra el archivo en AES con el hash como llave")
+    id5("Descifra el archivo en AES256 con el hash como llave")
     id6{"¿Existe la cuenta?"}
     id7[\"Seleccionar cuenta"\]
     id8("Agregar")
@@ -73,8 +73,8 @@ flowchart TB
     id11[\Generar\]
     id12(Se genera la contraseña)
     id13[\Guardar\]
-    idCipher(Cifra el archivo con AES con el hash como llave)
-    
+    idCipher(Cifra el archivo con AES256 con el hash como llave)
+
     id14{"¿Eliminar?"}
     id15[\Eliminar\]
     id16(Se elimina la cuenta)
@@ -85,7 +85,7 @@ flowchart TB
 
     id20[\Descifrar\]
     id21(Muestra la contraseña)
-    
+
     idf(("Fin"))
 
     id0 --> id1
