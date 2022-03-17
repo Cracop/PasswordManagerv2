@@ -56,16 +56,15 @@ Si se desea cambiar la contraseña con la cual se cifra la información, solo se
 
 ### Funcionamiento
 
-Se
-
 ```mermaid
 flowchart TB
     id0(("Inicio"))
     id1[\Pide contraseña maestra\]
+    idHash(Saca el hash de la contraseña maestra utilizando SHA256)
     id2{"¿Existe data.json?"}
     id3{"¿Contraseña Correcta?"}
     id4("Crea el archivo")
-    id5("Descifra el archivo")
+    id5("Descifra el archivo en AES con el hash como llave")
     id6{"¿Existe la cuenta?"}
     id7[\"Seleccionar cuenta"\]
     id8("Agregar")
@@ -74,23 +73,24 @@ flowchart TB
     id11[\Generar\]
     id12(Se genera la contraseña)
     id13[\Guardar\]
+    idCipher(Cifra el archivo con AES con el hash como llave)
     
     id14{"¿Eliminar?"}
     id15[\Eliminar\]
     id16(Se elimina la cuenta)
-    
-    
+
     id17{"¿Modificar?"}
     id18[\Modificar\]
     id19[Se cambia la contraseña]
-    
+
     id20[\Descifrar\]
     id21(Muestra la contraseña)
     
     idf(("Fin"))
-    
+
     id0 --> id1
-    id1--> id2-- Si--> id3
+    id1 --> idHash
+    idHash--> id2-- Si--> id3
     id2 -- No --> id4
     id3 -- Si --> id5
     id3 -- No --> idf
@@ -103,20 +103,19 @@ flowchart TB
     id10 --> id11
     id11 --> id12
     id12 --> id13
-    id13 --> idf
+    id13 --> idCipher
+    idCipher --> idf
     id7 --> id14
     id14 -- Si -->id15
     id15 --> id16
-    id16 --> idf
+    id16 --> idCipher
     id14 -- No --> id17
     id17 -- Si --> id18
     id18 --> id19
     id19 --> id13
     id17 -- No --> id20
     id20 --> id21
-    id21 --> id13
-    
-    
+    id21 --> id13 
 ```
 
 ### Cambios respecto a Password Manager V1
