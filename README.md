@@ -56,14 +56,19 @@ Si se desea cambiar la contraseña con la cual se cifra la información, solo se
 
 ### Funcionamiento
 
+Se
+
 ```mermaid
-graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+flowchart TB
+    Inicio--> id1{Ya existe data.json} --> Ini & Fin
 ```
 
 ### Cambios respecto a Password Manager V1
 
+Previamente la aplicación utilizaba Python como backend para el cifrado y descifrado de la información, así como que se utilizaba vanilla JavaScript.
+
+Para este proyecto se utilizó únicamente JavaScript para poder facilitar el desarrollo. De igual manera se utilizó la librería [JQuery](https://jquery.com/) con el objetivo de presentar una aplicación de mucho mayor calidad. 
+
 ### Futuro
+
+Para el Password Manager V3 se planea convertir el proyecto en un aplicacion web completa utilizando el stack MEVN ([MongoDB](https://www.mongodb.com/), [Express.js](https://expressjs.com/), [Vue.js](https://vuejs.org/), [Node.js]()). 
