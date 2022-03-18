@@ -55,7 +55,9 @@ Si se desea cambiar la contraseña con la cual se cifra la información, solo se
 ![Contraseña Maestra](/images/10.png)
 
 ### Funcionamiento
+Para entender mejor la funcionalidad de la aplicación, el Diagrama 1 muestra el diagrama de flujo de las acciones posibles a realizar cuando un usuario quiere agregar, modificar o eliminar una cuenta de la aplicación.
 
+Diagrama 1:
 ```mermaid
 flowchart TB
     id0(("Inicio"))
@@ -126,4 +128,4 @@ Para este proyecto se utilizó únicamente JavaScript para poder facilitar el de
 
 ### Futuro
 
-Para el Password Manager V3 se planea convertir el proyecto en un aplicacion web completa utilizando el stack MEVN ([MongoDB](https://www.mongodb.com/), [Express.js](https://expressjs.com/), [Vue.js](https://vuejs.org/), [Node.js]()). 
+Para el Password Manager V3 se planea convertir el proyecto en un aplicacion web completa utilizando el stack MEVN ([MongoDB](https://www.mongodb.com/), [Express.js](https://expressjs.com/), [Vue.js](https://vuejs.org/), Node.js). 
