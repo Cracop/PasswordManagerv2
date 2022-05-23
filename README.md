@@ -1,21 +1,18 @@
 # Password Manager V2
 
+ Una aplicación de escritorio para administrar las cuentas y contraseñas de diferentes sitios de manera segura. 
+
 ### Contenidos
 
-- [Acerca del proyecto](#acerca-del-proyecto)
 - [Instalación](#instalación)
+- [Overview](#overview)
 - [Uso](#uso)
-- [Funcionamiento](#funcionamiento)
 - [Cambios respecto a Password Manager V1](#cambios-respecto-a-password-manager-v1)
-- [Futuro](#futuro)
-
-### Acerca del Proyecto
-
-Se trata de una aplicación de escritorio para administrar las cuentas y contraseñas de diferentes sitios de manera segura. 
+- [Siguientes pasos](#siguientes-pasos)
 
 ### Instalación
 
-Se requiere haber instalado previamente `node.js` y `npm`
+Primero se requiere instalar `node.js` y `npm`. Una vez hecho eso se usan los siguientes comandos para descargar el proyecto.
 
 ```batch
 git clone https://github.com/Cracop/PasswordManagerv2.git
@@ -24,40 +21,9 @@ npm init
 npm install
 ```
 
-Para correr el programa se utiliza el siguiente comando dentro de la carpeta que contiene los archivos del proyecto: `npm start`
+Para ejecutar el programa se utiliza el siguiente comando dentro de la carpeta que contiene los archivos del proyecto: `npm start`
 
-### Uso
-
-Al correr el comando `npm start`, se mostrará la siguiente ventana
-
-![Landing Page](/images/1.png)
-
-Al darle click en `Acceder` se presentará la siguiente dialog box:
-
-![Insertar Contraseña](/images/2.png)
-
-- Si la aplicación no se ha utilizado previamente (no existe un archivo llamado `data.json`), la contraseña que se le dé será la contraseña con la cual se cifrará la información de ese momento en adelante. 
-- De haberse utilizado anteriormente, se deberá introducir la contraseña que se utilizó la primera vez. Si no se tiene la contraseña original, con borrar el archivo `data.json` la aplicación regresará a su estado original. 
-
-Ya una vez dentro de la aplicación se mostrarán las cuentas que se han guardado en forma de tabla, así como un botón que permite agregar una nueva cuenta. 
-![Ya dentro](/images/4.png)
-
-Al hacerle click a al botón de `Agregar` se presentan los siguentes campos. El botón de `Generar` presenta sugerencia de una contraseña segura. 
-![Agregar Cuenta](/images/6.png)
-
-Al darle click en `Guardar`se actualizará nuestra tabla de cuentas
-![Nueva Cuenta](/images/8.png)
-
-Para modificar o ver la contraseña de una cuenta creada previamente basta con solo darle click en la tabla, esto nos mostrará de nuevo las opciones que vimos al crear la cuenta. Para ver la contraseña, se debe de dar click en `Descifrar`.
-![Modificar](/images/9.png)
-
-Si se desea cambiar la contraseña con la cual se cifra la información, solo se necesita hacer click en `Cambiar Contraseña Maestra` e introducir la nueva contraseña.
-![Contraseña Maestra](/images/10.png)
-
-### Funcionamiento
-Para entender mejor la funcionalidad de la aplicación, el Diagrama 1 muestra el diagrama de flujo de las acciones posibles a realizar cuando un usuario quiere agregar, modificar o eliminar una cuenta de la aplicación.
-
-Diagrama 1:
+### Overview
 ```mermaid
 flowchart TB
     id0(("Inicio"))
@@ -120,12 +86,41 @@ flowchart TB
     id21 --> id13 
 ```
 
+### Uso
+
+1) Al correr el comando `npm start`, se mostrará la siguiente ventana:
+
+![Landing Page](/images/1.png)
+
+2) Al darle clic en `Acceder` se presentará la siguiente entrada:
+
+![Insertar Contraseña](/images/2.png)
+3) 
+- Si la aplicación no se ha utilizado previamente, es decir no existe un archivo llamado `data.json`, la contraseña que se le dé será la contraseña con la cual se cifrará la información de ese momento en adelante. 
+- De haberse utilizado anteriormente, se deberá introducir la contraseña que se utilizó la primera vez. Si no se tiene la contraseña original, con borrar el archivo `data.json` la aplicación regresará a su estado original. 
+
+
+4) Una vez dentro de la aplicación se mostrarán las cuentas que se han guardado en forma de tabla, así como un botón que permite agregar una nueva cuenta. 
+![Ya dentro](/images/4.png)
+
+5) Al hacerle clic a al botón de `Agregar` se presentan los siguentes campos. El botón de `Generar` presenta sugerencia de una contraseña segura. 
+![Agregar Cuenta](/images/6.png)
+
+6) Al darle click en `Guardar`se actualizará nuestra tabla de cuentas
+![Nueva Cuenta](/images/8.png)
+
+7) Para modificar o ver la contraseña de una cuenta creada previamente basta con solo darle click en la tabla, esto nos mostrará de nuevo las opciones que vimos al crear la cuenta. Para ver la contraseña, se debe de dar click en `Descifrar`.
+![Modificar](/images/9.png)
+
+8) Si se desea cambiar la contraseña con la cual se cifra la información, solo se necesita hacer click en `Cambiar Contraseña Maestra` e introducir la nueva contraseña.
+![Contraseña Maestra](/images/10.png)
+
 ### Cambios respecto a Password Manager V1
 
-Previamente la aplicación utilizaba Python como backend para el cifrado y descifrado de la información, así como que se utilizaba vanilla JavaScript.
+Previamente la aplicación utilizaba Python como backend para el cifrado y descifrado de la información, así como que se utilizaba *vanilla* JavaScript.
 
-Para este proyecto se utilizó únicamente JavaScript para poder facilitar el desarrollo. De igual manera se utilizó la librería [JQuery](https://jquery.com/) con el objetivo de presentar una aplicación de mucho mayor calidad. 
+Para este proyecto se utilizó únicamente JavaScript para poder facilitar el desarrollo. De igual manera se utilizó la librería [JQuery](https://jquery.com/) con el objetivo de presentar una aplicación de mayor calidad. 
 
-### Futuro
+### Siguientes pasos
 
 Para el Password Manager V3 se planea convertir el proyecto en un aplicacion web completa utilizando el stack MEVN ([MongoDB](https://www.mongodb.com/), [Express.js](https://expressjs.com/), [Vue.js](https://vuejs.org/), Node.js). 
